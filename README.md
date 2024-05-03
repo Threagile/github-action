@@ -37,6 +37,8 @@ jobs:
         uses: threagile/run-threagile-action@v1
         with:
           model-file: 'threagile.yaml'
+          output-dir: 'put/files/here' # default: threagile/output
+          optional-args: '-create-example-model'
      
       # Archive resulting files as artifacts
       - name: Archive Results
